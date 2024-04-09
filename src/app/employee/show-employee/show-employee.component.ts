@@ -15,7 +15,7 @@ export class ShowEmployeeComponent implements OnInit{
   EmployeeName:string="";
   ActivateAddEditEmpComp: boolean = false;
   emp: any; 
-  
+  // page load
   ngOnInit(): void {
     this.refreshEmpList();
   }
