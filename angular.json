@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularCRUD": {
+    "angular-form-control": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-crud",
+            "outputPath": "dist/angular-form-control",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularCRUD:build:production"
+              "browserTarget": "angular-form-control:build:production"
             },
             "development": {
-              "browserTarget": "AngularCRUD:build:development"
+              "browserTarget": "angular-form-control:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularCRUD:build"
+            "browserTarget": "angular-form-control:build"
           }
         },
         "test": {
@@ -94,8 +94,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "a83fcbc2-fdc0-4065-8a5b-4a7009b3f237"
   }
 }
